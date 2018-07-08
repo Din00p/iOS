@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CFC7A80D20F258400035348E /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFC7A80C20F258400035348E /* DataController.swift */; };
 		CFF9AEA820EFD61100EA7294 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFF9AEA720EFD61100EA7294 /* AppDelegate.swift */; };
 		CFF9AEAA20EFD61100EA7294 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFF9AEA920EFD61100EA7294 /* ViewController.swift */; };
 		CFF9AEAD20EFD61100EA7294 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CFF9AEAB20EFD61100EA7294 /* Main.storyboard */; };
@@ -19,6 +20,7 @@
 /* Begin PBXFileReference section */
 		13CD06C413178CF25ED2B7D8 /* Pods_DrSOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DrSOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		42676AB51C2C58CD817B9587 /* Pods-DrSOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DrSOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DrSOS/Pods-DrSOS.debug.xcconfig"; sourceTree = "<group>"; };
+		CFC7A80C20F258400035348E /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DataController.swift; path = "DrSOS/Persistence Layer/DataController.swift"; sourceTree = SOURCE_ROOT; };
 		CFF9AEA420EFD61100EA7294 /* DrSOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DrSOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CFF9AEA720EFD61100EA7294 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CFF9AEA920EFD61100EA7294 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -59,6 +61,15 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		CFC7A80E20F25BEF0035348E /* Persistence Layer */ = {
+			isa = PBXGroup;
+			children = (
+				CFC7A80C20F258400035348E /* DataController.swift */,
+				CFF9AEAE20EFD61100EA7294 /* DrSOS.xcdatamodeld */,
+			);
+			path = "Persistence Layer";
+			sourceTree = "<group>";
+		};
 		CFF9AE9B20EFD61100EA7294 = {
 			isa = PBXGroup;
 			children = (
@@ -80,6 +91,8 @@
 		CFF9AEA620EFD61100EA7294 /* DrSOS */ = {
 			isa = PBXGroup;
 			children = (
+				CFC7A80E20F25BEF0035348E /* Persistence Layer */,
+				CFF9AEB620EFD61400EA7294 /* Info.plist */,
 				CFF9AEBC20EFD6A800EA7294 /* General */,
 				CFF9AEA920EFD61100EA7294 /* ViewController.swift */,
 				CFF9AEAB20EFD61100EA7294 /* Main.storyboard */,
@@ -93,8 +106,6 @@
 				CFF9AEA720EFD61100EA7294 /* AppDelegate.swift */,
 				CFF9AEB120EFD61400EA7294 /* Assets.xcassets */,
 				CFF9AEB320EFD61400EA7294 /* LaunchScreen.storyboard */,
-				CFF9AEB620EFD61400EA7294 /* Info.plist */,
-				CFF9AEAE20EFD61100EA7294 /* DrSOS.xcdatamodeld */,
 			);
 			path = General;
 			sourceTree = "<group>";
@@ -214,6 +225,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CFF9AEAA20EFD61100EA7294 /* ViewController.swift in Sources */,
+				CFC7A80D20F258400035348E /* DataController.swift in Sources */,
 				CFF9AEA820EFD61100EA7294 /* AppDelegate.swift in Sources */,
 				CFF9AEB020EFD61100EA7294 /* DrSOS.xcdatamodeld in Sources */,
 			);
